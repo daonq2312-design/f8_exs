@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thư viện ảnh thú cưng</title>
+</head>
+<body>
+    <h1>Thư viện ảnh thú cưng đáng yêu</h1>
+
+    <!-- PHẦN 1: 4 ảnh liên tiếp nhau trong cùng một thẻ <p>, mỗi ảnh rộng 150 -->
+    <h2>Phần 1:</h2>
+    <p>
+        <img src="./images/pet1.jpg" alt="Mèo con lông xám mắt xanh" width="150">
+        <img src="./images/pet2.jpg" alt="Mèo vàng nhìn nghiêng dễ thương" width="150">
+        <img src="./images/pet3.jpg" alt="Mèo ngầu đeo kính râm" width="150">
+        <img src="./images/pet4.jpg" alt="Chú chó corgi thè lưỡi vui vẻ" width="150">
+    </p>
+
+    <!-- PHẦN 2 & PHẦN 3: 4 ảnh khác, mỗi ảnh nằm trong thẻ <div> riêng, có chú thích trong thẻ <p> -->
+    <h2>Phần 2 &amp; Phần 3:</h2>
+
+    <!-- Ảnh 1 (Phần 3): Làm cho ảnh đầu tiên của Phần 2 trở thành liên kết mở Google ở tab mới -->
+    <div>
+        <h3>Phần 3: Ảnh đầu tiên là liên kết (bấm vào ảnh để mở Google ở tab mới)</h3>
+        <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" title="Bấm vào ảnh để mở trang Google ở tab mới">
+            <img src="./images/pet5.jpg" alt="Chú cún con đang ngủ say" width="150" style="cursor: pointer; border: 2px solid #007bff; border-radius: 4px;">
+        </a>
+        <p>
+            Chú cún con đang ngủ say 
+            (<a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Bấm vào đây hoặc bấm vào ảnh trên để mở Google ở tab mới</a>)
+        </p>
+    </div>
+
+    <!-- Ảnh 2 -->
+    <div>
+        <img src="./images/pet6.jpg" alt="Hai chú chuột lang ăn cà rốt" width="150">
+        <p>Hai chú chuột lang đáng yêu đang cùng nhau ăn cà rốt</p>
+    </div>
+
+    <!-- Ảnh 3 -->
+    <div>
+        <img src="./images/pet7.jpg" alt="Chú cún lông xù vui đùa trên thảm cỏ" width="150">
+        <p>Chú cún cưng vui đùa thỏa thích trên bãi cỏ xanh</p>
+    </div>
+
+    <!-- Ảnh 4 -->
+    <div>
+        <img src="./images/pet8.jpg" alt="Bé mèo mướp nằm lười sưởi nắng" width="150">
+        <p>Bé mèo mướp thư giãn sưởi nắng buổi ban mai</p>
+    </div>
+
+    <hr>
+
+    <!-- CÂU HỎI SO SÁNH VÀ TRẢ LỜI -->
+    <h2>Trả lời câu hỏi so sánh</h2>
+
+    <p>
+        <b>1. Ở Phần 1, các ảnh nằm cùng một hàng hay mỗi ảnh một hàng? Vì sao?</b><br>
+        - <i>Trả lời:</i> Các ảnh nằm trên <b>cùng một hàng</b> (chỉ xuống hàng khi chiều rộng màn hình không đủ chỗ chứa).<br>
+        - <i>Vì sao:</i> Vì thẻ <code>&lt;img&gt;</code> là thẻ <b>inline</b>. Thẻ inline không tự động bắt đầu trên một dòng mới và chỉ chiếm kích thước bằng chính nội dung của nó, do đó các ảnh sẽ xếp nối tiếp nhau từ trái sang phải trên cùng một dòng.
+    </p>
+
+    <p>
+        <b>2. Ở Phần 2, các ảnh hiển thị khác Phần 1 như thế nào? Vì sao?</b><br>
+        - <i>Trả lời:</i> Ở Phần 2, mỗi ảnh và dòng chú thích của nó hiển thị trên <b>mỗi hàng riêng biệt</b> (xếp dọc từ trên xuống dưới).<br>
+        - <i>Vì sao:</i> Vì mỗi ảnh và đoạn chú thích được bao bọc trong một thẻ <code>&lt;div&gt;</code> riêng (và chú thích nằm trong thẻ <code>&lt;p&gt;</code>). Thẻ <code>&lt;div&gt;</code> và <code>&lt;p&gt;</code> đều là thẻ <b>block</b>, chúng luôn tự động ngắt dòng và chiếm trọn 100% chiều ngang của khối chứa, đẩy nội dung tiếp theo xuống dòng bên dưới.
+    </p>
+
+    <p>
+        <b>3. Kết luận:</b><br>
+        - Thẻ <code>&lt;img&gt;</code> là thẻ <b>inline</b>.<br>
+        - Thẻ <code>&lt;div&gt;</code> là thẻ <b>block</b>.
+    </p>
+</body>
+</html>
