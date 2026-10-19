@@ -1,0 +1,2 @@
+- clone về máy
+- nhấn từng file để hiển thị hoặc chạy live server
