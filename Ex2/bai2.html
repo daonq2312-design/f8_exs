@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập 2: Form đăng ký khóa học</title>
+    <style>
+        /* 1. Selector ID: Định dạng kích thước, viền và màu nền của form */
+        #form-dang-ky {
+            width: 400px;
+            border: 1px solid gray;
+            padding: 20px;
+            background-color: whitesmoke;
+            margin: 20px auto;
+        }
+
+        /* 2. Selector Thẻ (h2): Tiêu đề màu xanh dương, căn giữa */
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+
+        /* 3. Selector Thẻ (label): Cỡ chữ nhãn 16px */
+        label {
+            font-size: 16px;
+        }
+
+        /* 4. Selector Thẻ (input): Khoảng đệm bên trong các ô nhập */
+        input {
+            padding: 5px;
+        }
+
+        /* 5. Selector Class (.nut-dang-ky): Nút gửi màu xanh dương, chữ trắng */
+        .nut-dang-ky {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Tiêu đề trang -->
+    <h2>Đăng ký khóa học</h2>
+
+    <!-- Form đăng ký có id="form-dang-ky" -->
+    <form id="form-dang-ky">
+        <!-- Trường 1: Họ và tên (input text) -->
+        <p>
+            <label for="ho-ten">Họ và tên:</label>
+            <input type="text" id="ho-ten" name="ho-ten">
+        </p>
+
+        <!-- Trường 2: Email (input email) -->
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </p>
+
+        <!-- Trường 3: Mật khẩu (input password) -->
+        <p>
+            <label for="mat-khau">Mật khẩu:</label>
+            <input type="password" id="mat-khau" name="mat-khau">
+        </p>
+
+        <!-- Trường 4: Giới tính (input radio cùng name="gioi-tinh") -->
+        <p>
+            <label>Giới tính:</label>
+            <input type="radio" id="nam" name="gioi-tinh" value="nam">
+            <label for="nam">Nam</label>
+            <input type="radio" id="nu" name="gioi-tinh" value="nu">
+            <label for="nu">Nữ</label>
+        </p>
+
+        <!-- Trường 5: Khóa học (select và option) -->
+        <p>
+            <label for="khoa-hoc">Khóa học:</label>
+            <select id="khoa-hoc" name="khoa-hoc">
+                <option value="html-css">HTML/CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="reactjs">ReactJS</option>
+            </select>
+        </p>
+
+        <!-- Trường 6: Ghi chú (textarea) -->
+        <p>
+            <label for="ghi-chu">Ghi chú:</label>
+            <textarea id="ghi-chu" name="ghi-chu"></textarea>
+        </p>  
+
+        <!-- Hộp kiểm đồng ý điều khoản (input checkbox) -->
+        <p>
+            <input type="checkbox" id="dieu-khoan" name="dieu-khoan">
+            <label for="dieu-khoan">Tôi đồng ý với điều khoản</label>
+        </p>
+
+        <!-- Nút gửi đăng ký -->
+        <button type="submit" class="nut-dang-ky">Đăng ký</button>
+    </form>
+</body>
+</html>
+
