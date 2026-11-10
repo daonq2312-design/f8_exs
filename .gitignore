@@ -1,0 +1,11 @@
+# Antigravity AI files
+antigravity.md
+
+# Các file không liên quan
+*.docx
+*.py
+GEMINI.md
+
+# OS
+.DS_Store
+Thumbs.db

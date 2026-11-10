@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f0f2f5;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn {
+  width: 120px;
+  height: 45px;
+  background-color: #1877f2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Di chuyển lên trên 8px */
+.btn-move:hover {
+  transform: translateY(-8px);
+}
+
+/* Phóng to 1.2 lần */
+.btn-scale:hover {
+  transform: scale(1.2);
+}
+
+/* Xoay 10 độ */
+.btn-rotate:hover {
+  transform: rotate(10deg);
+}
+
+/* Nghiêng 15 độ theo trục X */
+.btn-skew:hover {
+  transform: skewX(15deg);
+}
